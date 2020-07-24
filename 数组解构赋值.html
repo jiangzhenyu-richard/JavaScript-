@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    /*
+    1、什么是解构赋值？
+     ES6允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构。
+     2、在解构赋值中，等号左边“格式”必须和右边的格式一模一样，才能解构
+     3、
+     */
+
+    let [a,v,b,d,f,e] = [1,null,false,undefined,[1,2,3,3,3,3,4,5,6,6,78,9],"1051510320",2];
+    console.log(a, v, v, b, b, d, f, e);
+
+    let ar =  [q,w=8,e=99] = [1,7,6];//右边等号如果没有变量赋值 会转到打印左边变量的赋值
+    console.log(q, w, e);
+    console.log(ar);
+
+    let av = [a,b,c,...d] = [1,2,33,66,88,99,456];
+    //...扩展运算符  左边等号的数组必须是最后一个,否则会报错。 ...数组 自动补全等号右边的数据
+    //...扩展运算符的作用就是把  等号右边剩余的数据打包成新的数组赋值给...变量
+    console.log(d);
+
+</script>
+<body>
+
+</body>
+</html>
