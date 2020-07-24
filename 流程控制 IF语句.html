@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<!--<script>
+    /*
+    if语句，当满足条件时，执行IF语句，不满足跳过
+    */
+    /*let age =19;
+    if (age >=18){
+        console.log("开网卡");
+    }
+    console.log("好好读书");*/
+
+    let age =51;
+    if (age<=18){
+        console.log("你只是个孩子");
+    } else if (age<=50){
+        console.log("年轻人加油");
+    } else if (age<=80){
+        console.log("老人家休息吧");
+    } else {
+        console.log("你他妈从外星来的吧");
+    }
+    //执行一句话用三目运算符，执行多句话用IF语句
+    /*  let num = prompt("请输入一个数");
+    // num%2===0 ?alert("这是偶数"):alert("这是奇数");
+    if (num%2===0){
+        alert("偶数");
+    } else {
+        alert("奇数");
+    }   */
+
+    let str = prompt("今天是星期几，你说的算");
+    let week =+str; //转换类型 (！！把字符串转换为整型)
+    if (week===1){
+        alert("今天是星期1");
+    } else if (week===2){
+        alert("今天是星期2");
+    } else if (week===3){
+        alert("今天是星期3");
+    } else if (week===4){
+        alert("今天是星期4");
+    }else if (week===5){
+        alert("今天是星期5");
+    }else if (week===6){
+        alert("今天是星期6");
+    }else if (week===7){
+        alert("今天是星期7");
+    }else {
+        alert("请输入正确的数");
+    }
+
+    let num =1;
+    let sum =0;
+    while (num<=5){
+        // sum = sum+ num;
+        sum+=num;
+        num++;
+    }
+    console.log(sum);
+</script>-->
+<script>
+ for ( let num = 1;num<=15;num++){
+     console.log("发射子弹啊"+num);
+    break;
+ }
+ for (hah=1;hah<=10;hah++){
+     if (hah===2){
+         continue;
+     }
+     console.log("觉得哈哈看见"+hah);
+
+ }
+ //在循环中 外循环控制的是行数，内循环控制的是列数。
+ /*for (let i=1;i<=19;i++){
+     for (let j=1;j<=i;j++){
+         document.write(i+"*"+j+"=");
+     }
+     document.write(i);
+     document.write("<br>");
+ }*/
+/*
+for (a=0;a<5;a++){
+    for (b=0;b<5;b++){
+        document.write("*");
+    }
+    document.write("<br>");
+
+}*/
+for (c=0;c<15;c++){
+    for (d=0;d<c;d++){
+        document.write("*");
+    }
+    document.write("<br>");
+}
+/*
+1
+12
+123
+*/
+
+for (e=1;e<5;e++){
+    for (f=1;f<e;f++){
+        document.write(f);
+    }
+    document.write("<br>");
+} 
+/*1
+  22
+  333*/
+ for (e=0;e<4;e++){
+     for (f=0;f<e;f++){
+         document.write(e);
+     }
+     document.write("<br>");
+ }
+
+</script>
+</html>
