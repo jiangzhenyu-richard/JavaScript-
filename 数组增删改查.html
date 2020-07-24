@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    <!--改数组里面的数据-->
+    /*let arr = ["a","b","c"];
+    arr[1] = "m";
+    console.log(arr);
+
+    arr[1] = "d";
+    arr[2] = "e";
+    console.log(arr);*/
+
+    let arr = ["a","b","c"];
+//    数组名称+splice() 替换从索引0之后的元素
+    arr.splice(1,2,"q","w");
+    console.log(arr);
+
+    //数组名称+push()在数组最后增加数据
+    arr.push("e","f","g");
+    console.log(arr);
+    console.log(arr.length);
+
+//    数组名称+unshift()在数组最前面添加数据
+    console.log(arr);
+    arr.unshift("aa","bb");
+    console.log(arr);
+
+//    数组名称+pop() 删除数组最后一条数据,执行一次
+    console.log(arr);
+    arr.pop();
+
+   let a = arr.pop();   //删除数据定义一个变量
+    console.log(a);     //打印被删除的数据
+    console.log(arr);
+
+//    数组名称+shift() 删除数组最前的一条数据,执行一次
+    let res = arr.shift();//删除数据定义一个变量
+    console.log(res);//打印被删除的数据
+    console.log(arr);
+
+    arr.splice(1,2);    //splice(索引为1，删除索引为1的两条数据)
+    console.log(arr);
+    arr.splice(0,3);
+    console.log(arr);
+
+    /*
+    注意点： splice()
+    splice(1，2，"a","b") 修改索引的数据
+    splice(1,5) 删除索引后5条数据
+
+    */
+
+
+</script>
+<body>
+
+</body>
+</html>
