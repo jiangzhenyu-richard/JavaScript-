@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 一、函数
+    //计算两个变量的和
+    let num1 = 10; num2 = 30;
+    let res = num1+num2;
+    console.log(res);
+
+    //使用函数把冗余的代码封装
+    function haha() {
+        let num1 = 10; num2 = 30;
+        let res = num1+num2;
+        console.log(res);
+    }
+    haha(); //调用函数
+
+    //二、函数返回值
+    function getSum(a,b,c,d) {
+        return a*b*c-d;     //返回值
+    }
+    console.log(getSum(10,20,30,5600));
+    function say() {
+        console.log('holl');
+    }
+    say();
+    let say1 = function () {
+        console.log('holllll');
+
+    };
+    say1();
+    console.log(1);
+    console.log(1,2);
+    console.log(1,2,3);
+    console.log(1,2,3,4);
+    console.log(1,2,3,4,5,6);
+    console.log(1,2,3,4,5,6,7);
+    console.log(1,2,3,4,5,6,7,8);
+    console.log(1,2,3,4,5,6,7,8,9);
+    console.log(1,2,3,4,5,6,7,8,9,10);
+
+    let say11 =function () {
+        console.log('Juede');
+    }
+    say11();
+
+    //三、箭头函数
+    //函数
+    // let asd = function (name){
+    //     console.log('hello' + name);
+    // }
+    // asd('haha');
+    //箭头函数  上面的简写方式
+    // let asd = name=>console.log('hello' + name);
+    // asd('haha');
+
+     //循环
+     /*do {
+         ps = prompt("输入");
+     }while (ps!=11);
+     alert('正确');*/
+
+     //四、递归函数例子
+    //递归函数就是自己调用自己，和循环相似
+    //递归函数不常用，每一次都循环（调用自己）都会开展新的空间，所以性能不好
+    /*
+    function login() {
+       let pws = prompt("输入密码");
+        if (pws !=123456){  //如果密码不等于123456，那么进入login()函数。
+            login();    //上述条件不满足，递归
+        }
+        alert("密码正确");  //if (pws !=123456) 密码等于123456， alert("密码正确")
+    }
+    login();    //递归函数
+    */
+
+
+    // console.log(num);
+    // let num = 123;
+    // let不能先打印后定义
+    // console.log(num);
+    // var num =123 ;
+    // var可以先打印后定义
+
+
+
+</script>
+
+</html>
