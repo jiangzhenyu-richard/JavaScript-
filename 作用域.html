@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //一、作用域
+    //在{}外的作用域为全局作用域， 在{}内的作用域为局部作用域
+
+    var num11 = 123; //全局变量
+    /*function test() {
+        var num2 = 456; //局部变量  注意点： 在函数中定义var 或者 let 都为局部变量
+    }
+    function test() {
+        num4 = 666; //全局变量  注意点：在函数中没有定义let 或者 var  为全局变量
+    }*/
+    {
+        var num3 = 456; //全局变量
+    }
+
+    //二、作用域链 分为0级、1级、2级、3级  如果3级作用域链没找到就会往上级去找
+    //全局变量为0级作用域链
+    var a = 12; //0级作用域链
+    function ha() {
+        //1级作用域链
+        var a = 123;
+        function haha() {
+            //2级作用域链
+            // var a =1234;     //把2级作用域链注释掉 会向上一级去找
+            console.log(a);
+        }
+        haha(); //打印最外层的函数 才能读取里面的函数
+    }
+    ha();   //打印ha();函数
+
+    
+
+</script>
+</html>
