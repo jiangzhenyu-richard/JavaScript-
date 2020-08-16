@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //1、什么是预解析
+    //1.1在JS中解析分为两种，一种是从上至下逐条解析，一种是预解析
+    //2、预解析规则
+    //2.1先打印变量 后定义变量 称为预解析
+    //3、预解析注意事项
+    //3.1 let定义不会被解析
+
+    //ES6之前定义函数的格式
+    say1();
+    function say1() {
+        console.log('hello It666');
+    }
+    var say = function()  {
+        console.log("hello gays");
+    }
+    //ES6函数定义方法
+    let sa =()=>{
+        console.log('sadcv');
+    }
+    //预解析前
+    var num = 33;
+    fun();
+    function fun() {
+        console.log(num);
+        var num = 66;
+    }
+    //预解析后
+    /*
+    var num ;
+    function fun() {
+        // console.log(num);
+        // var num = 66;   //预解析后
+        var num ;
+        console.log(num);
+        num =66;
+    }
+    num = 33;
+    fun();
+     */
+</script>
+</html>
